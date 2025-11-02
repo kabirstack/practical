@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page</title>
+
+  <style>
+    /* ===============================
+       🌐 MOBILE FIRST DESIGN
+       Default styles for mobile devices
+       Flexible units used: %, em, rem, vw
+    =============================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f0f4f8;
+      color: #333;
+      padding: 1rem;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      background-color: #023e8a;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+    .box {
+      background-color: white;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    /* ===============================
+       💻 MEDIA QUERIES
+       For Tablets (min-width: 600px)
+    =============================== */
+    @media (min-width: 600px) {
+      nav a {
+        font-size: 1.1rem;
+      }
+
+      .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .box {
+        flex: 1 1 45%;
+      }
+    }
+
+    /* ===============================
+       🖥️ MEDIA QUERIES
+       For Desktops (min-width: 900px)
+    =============================== */
+    @media (min-width: 900px) {
+      header {
+        font-size: 2rem;
+      }
+
+      nav {
+        text-align: right;
+        padding: 1rem 3rem;
+      }
+
+      nav a {
+        font-size: 1.2rem;
+      }
+
+      .box {
+        flex: 1 1 30%;
+        padding: 2rem;
+      }
+
+      body {
+        padding: 2rem 5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Responsive Web Page Example
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="container">
+    <div class="box">
+      <h2>Mobile First Design</h2>
+      <p>This page starts with a simple mobile layout and adapts for larger screens.</p>
+    </div>
+
+    <div class="box">
+      <h2>Flexible Units</h2>
+      <p>Uses rem, %, and vw units to ensure proportional sizing and spacing.</p>
+    </div>
+
+    <div class="box">
+      <h2>Responsive Layout</h2>
+      <p>Media queries adjust the layout for tablets and desktops automatically.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Kabir Singh | Responsive Design Demo
+  </footer>
+
+</body>
+</html>

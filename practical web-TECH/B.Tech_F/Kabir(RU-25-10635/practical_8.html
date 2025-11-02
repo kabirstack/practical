@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demonstrate CSS Selectors</title>
+
+  <style>
+    /* ===============================
+       1️⃣ Universal Selector (*)
+       Applies style to all elements.
+    =============================== */
+    * {
+      font-family: Arial, sans-serif;
+      margin: 8px;
+    }
+
+    /* ===============================
+       2️⃣ Class Selector (.classname)
+       Used to style one or more elements 
+       having the same class name.
+    =============================== */
+    .highlight {
+      color: white;
+      background-color: teal;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    /* ===============================
+       3️⃣ ID Selector (#idname)
+       Used to style a unique element having 
+       a specific ID.
+    =============================== */
+    #special {
+      color: darkred;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    /* ===============================
+       4️⃣ Descendant Selector (parent child)
+       Used to style elements that are inside 
+       a specific parent.
+    =============================== */
+    div p {
+      color: darkblue;
+      background-color: lightcyan;
+      padding: 6px;
+      border-left: 4px solid navy;
+    }
+
+    /* ===============================
+       5️⃣ Group Selector (selector1, selector2)
+       Applies the same style to multiple 
+       elements at once.
+    =============================== */
+    h1, h2, h3 {
+      color: green;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Demonstration of CSS Selectors</h1>
+  <h2>Understanding Different CSS Selectors</h2>
+
+  <p>This is a normal paragraph without any selector applied.</p>
+
+  <p class="highlight">This paragraph uses a <strong>class selector</strong> (.highlight).</p>
+
+  <p id="special">This paragraph uses an <strong>ID selector</strong> (#special).</p>
+
+  <div>
+    <h3>Example of Descendant Selector</h3>
+    <p>This paragraph is inside a &lt;div&gt; tag, styled using a <strong>descendant selector</strong> (div p).</p>
+  </div>
+
+  <hr>
+
+  <h2>Explanation of CSS Selectors</h2>
+  <p><strong>Universal Selector (*)</strong> — Applies to all elements on the page.</p>
+  <p><strong>Class Selector (.classname)</strong> — Used for multiple elements sharing the same style.</p>
+  <p><strong>ID Selector (#idname)</strong> — Used for styling a single, unique element.</p>
+  <p><strong>Descendant Selector (parent child)</strong> — Styles child elements within a specific parent.</p>
+  <p><strong>Group Selector (a, b, c)</strong> — Groups multiple selectors to apply the same styling together.</p>
+
+</body>
+</html>
